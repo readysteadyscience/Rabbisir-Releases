@@ -1,0 +1,54 @@
+{
+  "$schema": "./official-app-releases.schema.json",
+  "schemaVersion": 2,
+  "channel": "production",
+  "updatedAt": "2026-08-26T04:17:51Z",
+  "authority": {
+    "repository": "readysteadyscience/Rabbisir-Releases",
+    "appcastURL": "https://raw.githubusercontent.com/readysteadyscience/Rabbisir-Releases/main/appcast.xml",
+    "stableDownloadURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
+  },
+  "latest": {
+    "version": "0.1.4",
+    "build": "6",
+    "tag": "v0.1.4"
+  },
+  "releases": [
+    {
+      "version": "0.1.4",
+      "build": "6",
+      "tag": "v0.1.4",
+      "publishedOn": "2026-08-26",
+      "selectedTypes": ["fix"],
+      "categories": {
+        "fix": [
+          {
+            "zh": "修复上一版本中已确认的问题。",
+            "en": "Resolves verified issues from the previous version."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/tag/v0.1.4",
+      "assets": [
+        {
+          "name": "Rabbisir-0.1.4-6.zip",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.1.4/Rabbisir-0.1.4-6.zip",
+          "size": 133310314,
+          "sha256": "ee8f4dacc741da9c3f63edeecb4e0e13d0f0cc2d6322b214d21ec1a1398747b4"
+        },
+        {
+          "name": "Rabbisir-0.1.4-6.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.1.4/Rabbisir-0.1.4-6.dmg",
+          "size": 96167229,
+          "sha256": "866917485b24a217c56d63b0419a11e2c731149f39c4ece773202730ade0761e"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.1.4/Rabbisir.dmg",
+          "size": 96167229,
+          "sha256": "866917485b24a217c56d63b0419a11e2c731149f39c4ece773202730ade0761e"
+        }
+      ]
+    }
+  ]
+}

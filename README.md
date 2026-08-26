@@ -12,6 +12,9 @@
 
 开源项目入口：[readysteadyscience/Rabbisir](https://github.com/readysteadyscience/Rabbisir)
 
-未来正式版本使用 `vX.Y.Z` Tag；固定下载别名规划为 `Rabbisir.dmg`。
+正式版本使用 `vX.Y.Z` Tag。版本化 ZIP、DMG、公开清单及校验和随对应 GitHub
+Release 发布；固定下载别名为 `Rabbisir.dmg`。
 
-当前仓库仅建立发行面骨架，尚未发布任何 Release、资产或可下载版本。
+- 权威自动更新 Feed：[`appcast.xml`](appcast.xml)
+- 公开版本数据：[`official-app-releases.json`](official-app-releases.json)
+- 版本数据 Schema：[`official-app-releases.schema.json`](official-app-releases.schema.json)
