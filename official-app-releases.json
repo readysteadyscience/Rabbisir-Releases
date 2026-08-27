@@ -2,7 +2,7 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T16:44:13Z",
   "authority": {
     "repository": "readysteadyscience/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/readysteadyscience/Rabbisir-Releases/main/appcast.xml",
@@ -27,7 +27,7 @@
         "optimization": [
           {
             "zh": "优化终端高输出、长会话流式内容、代码高亮、图片与 Artifact 预览的增量处理，提升长时间使用时的响应与资源稳定性。",
-            "en": "Improves incremental handling for high-volume terminal output, long conversation streams, code highlighting, images, and artifact previews for better responsiveness and resource stability."
+            "en": "Improves incremental handling for terminal output, long conversation streams, code highlighting, images, and artifact previews to improve responsiveness and resource stability."
           },
           {
             "zh": "优化运行时、会话与后台任务生命周期，降低重复解析、无界队列和残留进程风险。",
