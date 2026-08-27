@@ -2,24 +2,99 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-08-26T04:17:51Z",
+  "updatedAt": "2026-08-27T00:00:00Z",
   "authority": {
     "repository": "readysteadyscience/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/readysteadyscience/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.1.4",
-    "build": "6",
-    "tag": "v0.1.4"
+    "version": "0.2.0",
+    "build": "7",
+    "tag": "v0.2.0"
   },
   "releases": [
+    {
+      "version": "0.2.0",
+      "build": "7",
+      "tag": "v0.2.0",
+      "publishedOn": "2026-08-27",
+      "selectedTypes": [
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "optimization": [
+          {
+            "zh": "优化终端高输出、长会话流式内容、代码高亮、图片与 Artifact 预览的增量处理，提升长时间使用时的响应与资源稳定性。",
+            "en": "Improves incremental handling for high-volume terminal output, long conversation streams, code highlighting, images, and artifact previews for better responsiveness and resource stability."
+          },
+          {
+            "zh": "优化运行时、会话与后台任务生命周期，降低重复解析、无界队列和残留进程风险。",
+            "en": "Improves runtime, session, and background-task lifecycles to reduce duplicate parsing, unbounded queues, and lingering processes."
+          },
+          {
+            "zh": "优化自动浏览预览缓存与界面热点，保留用户手动标签并改善导航、面板和输入区域的流畅度。",
+            "en": "Improves automatic preview caching and interface hot paths while preserving manually opened tabs and smoothing navigation, panels, and composition."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复退出时终端进程组和端口未可靠释放的问题。",
+            "en": "Fixes terminal process groups and ports not being released reliably on exit."
+          },
+          {
+            "zh": "修复工作区文件预览中的路径竞态，并加强运行时来源完整性复核。",
+            "en": "Fixes a workspace file-preview path race and strengthens runtime provenance revalidation."
+          },
+          {
+            "zh": "修复 Keychain 保存后重启失败及文档元数据失败时状态提示不准确的问题。",
+            "en": "Fixes inaccurate status reporting when restart fails after Keychain storage or document metadata fails after content is saved."
+          },
+          {
+            "zh": "修复长会话流可能持续保活、辅助功能标签未随语言更新的问题。",
+            "en": "Fixes long-running conversation streams retaining state and accessibility labels not following language changes."
+          },
+          {
+            "zh": "修复中文输入法候选提交内容可能被旧草稿清空的问题。",
+            "en": "Fixes committed Chinese input-method text being cleared by a stale draft."
+          },
+          {
+            "zh": "修复短用户消息未按自然宽度贴右显示的问题。",
+            "en": "Fixes short user messages not using their natural right-aligned width."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/tag/v0.2.0",
+      "assets": [
+        {
+          "name": "Rabbisir-0.2.0-7.zip",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.2.0/Rabbisir-0.2.0-7.zip",
+          "size": 133591473,
+          "sha256": "5587a7f3502e42b258bb65375a5ef99de3542bcdf30aa638c2b7b839bcefda67"
+        },
+        {
+          "name": "Rabbisir-0.2.0-7.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.2.0/Rabbisir-0.2.0-7.dmg",
+          "size": 96452799,
+          "sha256": "1312b36b050ac2c371fdd093e5d45918ba4b96b9426273301a7785bab53e15ad"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.2.0/Rabbisir.dmg",
+          "size": 96452799,
+          "sha256": "1312b36b050ac2c371fdd093e5d45918ba4b96b9426273301a7785bab53e15ad"
+        }
+      ]
+    },
     {
       "version": "0.1.4",
       "build": "6",
       "tag": "v0.1.4",
       "publishedOn": "2026-08-26",
-      "selectedTypes": ["fix"],
+      "selectedTypes": [
+        "fix"
+      ],
       "categories": {
         "fix": [
           {
