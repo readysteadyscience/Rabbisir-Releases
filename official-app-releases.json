@@ -2,18 +2,68 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-08-27T16:44:13Z",
+  "updatedAt": "2026-08-30T00:00:00Z",
   "authority": {
     "repository": "readysteadyscience/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/readysteadyscience/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.2.0",
-    "build": "7",
-    "tag": "v0.2.0"
+    "version": "0.3.0",
+    "build": "8",
+    "tag": "v0.3.0"
   },
   "releases": [
+    {
+      "version": "0.3.0",
+      "build": "8",
+      "tag": "v0.3.0",
+      "publishedOn": "2026-08-30",
+      "selectedTypes": [
+        "optimization"
+      ],
+      "categories": {
+        "optimization": [
+          {
+            "zh": "优化纯文本、Markdown、文稿和 PDF 原生工作台，统一编辑、预览、保存与 A4 分页体验。",
+            "en": "Improves the native text, Markdown, document, and PDF workbenches with consistent editing, preview, saving, and A4 pagination."
+          },
+          {
+            "zh": "优化任务终态与输入提交流程，使停止、完成和中文输入在延迟回调与重连场景下更稳定。",
+            "en": "Improves task completion and composer submission so stopping, completion, and Chinese input remain stable across delayed callbacks and reconnects."
+          },
+          {
+            "zh": "优化任务产物的自动呈现与安全内部预览，避免重复标签、抢焦点或覆盖未保存编辑。",
+            "en": "Improves automatic artifact presentation and secure internal previews while avoiding duplicate tabs, focus stealing, and unsaved-edit replacement."
+          },
+          {
+            "zh": "优化长会话增量投影、有界缓冲与缺口修复，提升流式内容的响应和恢复可靠性。",
+            "en": "Improves long-conversation incremental projection, bounded buffering, and gap repair for more responsive and reliable streaming recovery."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/tag/v0.3.0",
+      "assets": [
+        {
+          "name": "Rabbisir-0.3.0-8.zip",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.0/Rabbisir-0.3.0-8.zip",
+          "size": 134526070,
+          "sha256": "267b80d6248bf2eba0a3a5795c97399623a37b787302f7ae9958f5f2c1cc6b3a"
+        },
+        {
+          "name": "Rabbisir-0.3.0-8.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.0/Rabbisir-0.3.0-8.dmg",
+          "size": 97374345,
+          "sha256": "ee58509ad769b8361e0b6ecf728d371b117aed8994738548d4fedd9d41df26d6"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.0/Rabbisir.dmg",
+          "size": 97374345,
+          "sha256": "ee58509ad769b8361e0b6ecf728d371b117aed8994738548d4fedd9d41df26d6"
+        }
+      ]
+    },
     {
       "version": "0.2.0",
       "build": "7",
