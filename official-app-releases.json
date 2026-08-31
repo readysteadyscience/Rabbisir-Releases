@@ -2,18 +2,72 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-08-30T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z",
   "authority": {
     "repository": "readysteadyscience/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/readysteadyscience/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.3.0",
-    "build": "8",
-    "tag": "v0.3.0"
+    "version": "0.3.1",
+    "build": "9",
+    "tag": "v0.3.1"
   },
   "releases": [
+    {
+      "version": "0.3.1",
+      "build": "9",
+      "tag": "v0.3.1",
+      "publishedOn": "2026-08-31",
+      "selectedTypes": [
+        "fix"
+      ],
+      "categories": {
+        "fix": [
+          {
+            "zh": "修复任务终态、停止与提交回读的竞态，避免已完成任务继续运行、停止报错或成功内容回填输入框。",
+            "en": "Fixes task completion, stopping, and submission readback races that could leave completed tasks running, report stop errors, or refill the composer."
+          },
+          {
+            "zh": "修复任务完成后的产物路由、重复打开和编辑抢焦点问题。",
+            "en": "Fixes artifact routing after completion, duplicate opening, and focus stealing while editing."
+          },
+          {
+            "zh": "修复退出或更新重启时未保存内容丢失，以及重连时待审批或待回答交互被清空的问题。",
+            "en": "Fixes unsaved-content loss during quit or update relaunch and preserves pending approvals or questions across reconnects."
+          },
+          {
+            "zh": "修复图片、RPC 与网络响应的内存边界，以及远程网页跳转本机回环地址或跨回环端口的问题。",
+            "en": "Fixes image, RPC, and network response bounds and blocks unsafe remote navigation into loopback or across loopback ports."
+          },
+          {
+            "zh": "修复 WebSocket 静默半开、公告刷新抖动和更新 URL 回环别名遗漏。",
+            "en": "Fixes silent half-open WebSockets, announcement refresh churn, and missed loopback aliases in update URLs."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/tag/v0.3.1",
+      "assets": [
+        {
+          "name": "Rabbisir-0.3.1-9.zip",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.1/Rabbisir-0.3.1-9.zip",
+          "size": 134765168,
+          "sha256": "ab019e97db72ce0ee1bf1ea2cbaeddd93f0b359e9babb87d32d1574ed2a9d7dc"
+        },
+        {
+          "name": "Rabbisir-0.3.1-9.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.1/Rabbisir-0.3.1-9.dmg",
+          "size": 97593008,
+          "sha256": "298199b34ed838fca9b3d52891c0dd3628d792114812d3b1607c9b63171d8e69"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.1/Rabbisir.dmg",
+          "size": 97593008,
+          "sha256": "298199b34ed838fca9b3d52891c0dd3628d792114812d3b1607c9b63171d8e69"
+        }
+      ]
+    },
     {
       "version": "0.3.0",
       "build": "8",
