@@ -2,18 +2,64 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z",
   "authority": {
     "repository": "readysteadyscience/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/readysteadyscience/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.3.1",
-    "build": "9",
-    "tag": "v0.3.1"
+    "version": "0.3.2",
+    "build": "10",
+    "tag": "v0.3.2"
   },
   "releases": [
+    {
+      "version": "0.3.2",
+      "build": "10",
+      "tag": "v0.3.2",
+      "publishedOn": "2026-09-01",
+      "selectedTypes": [
+        "fix"
+      ],
+      "categories": {
+        "fix": [
+          {
+            "zh": "修复上游图片限制可能放宽 Rabbisir 本地安全上限的问题，超限附件会在提交前受控拒绝。",
+            "en": "Fixes upstream image limits overriding Rabbisir's stricter local cap, with over-limit attachments rejected before submission."
+          },
+          {
+            "zh": "修复缺失或伪造 Content-Length、解压膨胀及取消竞态，使超限响应只终止一次并安全失败。",
+            "en": "Fixes missing or forged Content-Length, decompression expansion, and cancellation races so oversized responses stop once and fail closed."
+          },
+          {
+            "zh": "修复陈旧浏览器跳转回调干扰当前页面的问题，并在所有结束路径清理有界 provisional 状态。",
+            "en": "Fixes stale browser navigation callbacks disturbing the current page and clears bounded provisional state on every terminal path."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/tag/v0.3.2",
+      "assets": [
+        {
+          "name": "Rabbisir-0.3.2-10.zip",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.2/Rabbisir-0.3.2-10.zip",
+          "size": 134832741,
+          "sha256": "70dbabd90f137112efa7099874de00b01d84140fd422d5386e81463210b32fb1"
+        },
+        {
+          "name": "Rabbisir-0.3.2-10.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.2/Rabbisir-0.3.2-10.dmg",
+          "size": 97690232,
+          "sha256": "0cce0386ead0afe2eecdf4e33538d2dd6ef61faf65b569e27004f752fe3c4b4f"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.2/Rabbisir.dmg",
+          "size": 97690232,
+          "sha256": "0cce0386ead0afe2eecdf4e33538d2dd6ef61faf65b569e27004f752fe3c4b4f"
+        }
+      ]
+    },
     {
       "version": "0.3.1",
       "build": "9",
