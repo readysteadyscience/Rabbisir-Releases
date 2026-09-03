@@ -4,17 +4,17 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>Rabbisir</title>
         <item>
-            <title>0.3.3</title>
-            <pubDate>Thu, 03 Sep 2026 14:39:19 +0800</pubDate>
+            <title>0.3.4</title>
+            <pubDate>Thu, 03 Sep 2026 18:21:18 +0800</pubDate>
             <sparkle:channel>production</sparkle:channel>
-            <sparkle:version>11</sparkle:version>
-            <sparkle:shortVersionString>0.3.3</sparkle:shortVersionString>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>0.3.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.3/Rabbisir-0.3.3-11.zip" length="134940474" type="application/octet-stream" sparkle:edSignature="4cVvh5/WwGlzy5KyPbM4ZDBpKi2DOmKxh5pbNUsJnEbBvFlLwB2SFLBx/aXGSy9teXSkEXOKudIu/vqZyNBXBA=="></enclosure>
+            <enclosure url="https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.4/Rabbisir-0.3.4-12.zip" length="134974208" type="application/octet-stream" sparkle:edSignature="VKndGUAjiu95ww6yGfcjJKgCrPJ94yzFW9MJw8gq+GFwGL509QIKpWdQFYtWZHWb+KFWlwUDSrgRpoZ7E620DA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: iRIOE2xExnuaXgBRkbMyjNAz2i/SZlPLywIeiVDS1DOrbHTJTgqZu9fz1mLtSxFM49qmrms4mDat/ptOqkQbCQ==
+edSignature: GTW9x4PT7cHQq/01nRrd2Dx3WbvIIDH2wm/ohqfdOs19euw6SRS+3fVqvPfxVibtNCtS3ooeF38DXlU4o9cOCg==
 length: 1203
 -->

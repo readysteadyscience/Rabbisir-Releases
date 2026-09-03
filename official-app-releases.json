@@ -9,11 +9,72 @@
     "stableDownloadURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.3.3",
-    "build": "11",
-    "tag": "v0.3.3"
+    "version": "0.3.4",
+    "build": "12",
+    "tag": "v0.3.4"
   },
   "releases": [
+    {
+      "version": "0.3.4",
+      "build": "12",
+      "tag": "v0.3.4",
+      "publishedOn": "2026-09-03",
+      "selectedTypes": [
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "optimization": [
+          {
+            "zh": "优化当前会话权限恢复，使用有界重试、冷却合并和单次请求机制，避免持续轮询。",
+            "en": "Improves current-session permission recovery with bounded retries, cooldown coalescing, and single-flight requests without continuous polling."
+          },
+          {
+            "zh": "优化权限选项异步加载，以会话、连接、选择和能力代际隔离陈旧结果。",
+            "en": "Improves asynchronous permission loading by isolating stale results across session, connection, selection, and capability generations."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复已存在或已完成会话因权限状态晚到或缺失而长期停在加载中、无法继续的问题。",
+            "en": "Fixes existing or completed sessions remaining stuck in permission loading when the current projection arrives late or is unavailable."
+          },
+          {
+            "zh": "修复未来会话默认权限被误用作当前会话权限回退值的问题。",
+            "en": "Fixes the future-session default permission being used incorrectly as the current-session fallback."
+          },
+          {
+            "zh": "修复能力版本更新后权限菜单保留空选项，以及通用命令菜单被错误卡在加载中的问题。",
+            "en": "Fixes empty permission options after capability changes and command menus incorrectly remaining in a loading state."
+          },
+          {
+            "zh": "修复会话切换、连接恢复和取消竞态中陈旧权限结果覆盖当前选择的问题。",
+            "en": "Fixes stale permission results overriding the current choice during session switches, reconnection, and cancellation races."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/tag/v0.3.4",
+      "assets": [
+        {
+          "name": "Rabbisir-0.3.4-12.zip",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.4/Rabbisir-0.3.4-12.zip",
+          "size": 134974208,
+          "sha256": "4bc4367f7a28894bca8292ff16f33aa166779ec7a8ecd9c5d38aada66e615e01"
+        },
+        {
+          "name": "Rabbisir-0.3.4-12.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.4/Rabbisir-0.3.4-12.dmg",
+          "size": 97828424,
+          "sha256": "365e0525cc80b7ffb96d859132a7c0b2b5eb66da01ebcff74417880a91668663"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.4/Rabbisir.dmg",
+          "size": 97828424,
+          "sha256": "365e0525cc80b7ffb96d859132a7c0b2b5eb66da01ebcff74417880a91668663"
+        }
+      ]
+    },
     {
       "version": "0.3.3",
       "build": "11",
