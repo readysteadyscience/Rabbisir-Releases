@@ -2,18 +2,79 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-03T00:00:00Z",
   "authority": {
     "repository": "readysteadyscience/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/readysteadyscience/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.3.2",
-    "build": "10",
-    "tag": "v0.3.2"
+    "version": "0.3.3",
+    "build": "11",
+    "tag": "v0.3.3"
   },
   "releases": [
+    {
+      "version": "0.3.3",
+      "build": "11",
+      "tag": "v0.3.3",
+      "publishedOn": "2026-09-03",
+      "selectedTypes": [
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "optimization": [
+          {
+            "zh": "优化 DOCX/RTF 工作台，使纯文本、Markdown、文稿与 PDF 四种视图共用同一可编辑内容源。",
+            "en": "Improves the DOCX/RTF workbench so text, Markdown, document, and PDF views share one editable content source."
+          },
+          {
+            "zh": "优化本地文件失败反馈，支持重试、关闭、用户操作优先级及会话代际失效，同时保持安全的内部预览路由。",
+            "en": "Improves local-file failure feedback with retry, dismissal, user priority, and session-generation invalidation while preserving secure internal previews."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复 DOCX/RTF 仅进入只读降级页的问题，在工作区写权限下默认进入可编辑文稿并保留外部源。",
+            "en": "Fixes DOCX/RTF opening only in a read-only fallback; writable workspaces now use an editable document copy while preserving the external source."
+          },
+          {
+            "zh": "修复本地文件、图片或自动预览错误替换整个主对话的问题。",
+            "en": "Fixes local file, image, or automatic preview errors replacing the entire main conversation."
+          },
+          {
+            "zh": "修复自动后台失败覆盖用户主动文件失败的问题。",
+            "en": "Fixes automatic background failures overriding feedback from a user-initiated file action."
+          },
+          {
+            "zh": "修复陈旧异步重试进入错误会话，以及非初始错误被误当成整页历史失败的问题。",
+            "en": "Fixes stale asynchronous retries entering the wrong session and non-initial errors becoming full-page history failures."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/tag/v0.3.3",
+      "assets": [
+        {
+          "name": "Rabbisir-0.3.3-11.zip",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.3/Rabbisir-0.3.3-11.zip",
+          "size": 134940474,
+          "sha256": "7590265cc0ffde7ad8b8ca0de2dd056838b7451ce2ff28e451ae84ca2ccc0e76"
+        },
+        {
+          "name": "Rabbisir-0.3.3-11.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.3/Rabbisir-0.3.3-11.dmg",
+          "size": 97763705,
+          "sha256": "99536f0072d787ab7c094b5dd88ef8bee6f4fa7bb41512455baeb7f536961313"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.3/Rabbisir.dmg",
+          "size": 97763705,
+          "sha256": "99536f0072d787ab7c094b5dd88ef8bee6f4fa7bb41512455baeb7f536961313"
+        }
+      ]
+    },
     {
       "version": "0.3.2",
       "build": "10",
