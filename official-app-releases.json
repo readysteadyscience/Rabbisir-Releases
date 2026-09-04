@@ -2,18 +2,75 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-09-04T00:00:00Z",
+  "updatedAt": "2026-09-05T00:00:00Z",
   "authority": {
     "repository": "readysteadyscience/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/readysteadyscience/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.3.5",
-    "build": "13",
-    "tag": "v0.3.5"
+    "version": "0.3.6",
+    "build": "14",
+    "tag": "v0.3.6"
   },
   "releases": [
+    {
+      "version": "0.3.6",
+      "build": "14",
+      "tag": "v0.3.6",
+      "publishedOn": "2026-09-05",
+      "selectedTypes": [
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "optimization": [
+          {
+            "zh": "优化审批、提问、队列、后台任务与重连状态的权威收敛，冲突、饱和和迟到投影下不重复动作。",
+            "en": "Improves authoritative convergence for approvals, questions, queues, background jobs, and reconnects without repeating actions after conflicts, saturation, or late projections."
+          },
+          {
+            "zh": "优化工具密集型长历史加载，在既有安全上限内支持单回合超过 256 个事件。",
+            "en": "Improves tool-heavy history loading to support more than 256 events in one turn while preserving the existing safety limits."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复审批、提问和取消在重连、冲突或结果未知时仍可重复操作或错误降级的问题。",
+            "en": "Fixes approvals, questions, and cancellation remaining repeatable or being misclassified after reconnects, conflicts, or unknown outcomes."
+          },
+          {
+            "zh": "修复迟到投影覆盖最终状态、复活临时任务，以及工具恢复摘要不清晰或暴露多余细节的问题。",
+            "en": "Fixes late projections overriding final states, reviving transient work, and recovery summaries being unclear or exposing unnecessary details."
+          },
+          {
+            "zh": "修复工具密集型单回合超过 256 个事件时历史持续卡在读取状态的问题。",
+            "en": "Fixes tool-heavy single-turn histories remaining stuck in the loading state after exceeding 256 events."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/tag/v0.3.6",
+      "assets": [
+        {
+          "name": "Rabbisir-0.3.6-14.zip",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.6/Rabbisir-0.3.6-14.zip",
+          "size": 135135261,
+          "sha256": "b2e74650c76089743946240a15908f728043733f0507f927729b268120c63ee4"
+        },
+        {
+          "name": "Rabbisir-0.3.6-14.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.6/Rabbisir-0.3.6-14.dmg",
+          "size": 97985786,
+          "sha256": "2f503a43dcc3f3c76a8c748dd2d7da483e7c02f6f61834cef85b98505aa2de7b"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.6/Rabbisir.dmg",
+          "size": 97985786,
+          "sha256": "2f503a43dcc3f3c76a8c748dd2d7da483e7c02f6f61834cef85b98505aa2de7b"
+        }
+      ]
+    },
     {
       "version": "0.3.5",
       "build": "13",
