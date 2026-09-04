@@ -2,18 +2,87 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-09-03T00:00:00Z",
+  "updatedAt": "2026-09-04T00:00:00Z",
   "authority": {
     "repository": "readysteadyscience/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/readysteadyscience/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.3.4",
-    "build": "12",
-    "tag": "v0.3.4"
+    "version": "0.3.5",
+    "build": "13",
+    "tag": "v0.3.5"
   },
   "releases": [
+    {
+      "version": "0.3.5",
+      "build": "13",
+      "tag": "v0.3.5",
+      "publishedOn": "2026-09-04",
+      "selectedTypes": [
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "optimization": [
+          {
+            "zh": "优化持续运行期间的更新发现，在前台、唤醒、网络恢复和周期触发中使用冷却合并与单次请求，避免高频轮询。",
+            "en": "Improves update discovery while the App stays open, using cooldown coalescing and single-flight checks across foreground, wake, network recovery, and periodic triggers."
+          },
+          {
+            "zh": "优化会话能力与设置的可信回读，隔离陈旧的模型、推理等级、Preset 和权限结果。",
+            "en": "Improves trusted session capability and settings readback by isolating stale model, reasoning, preset, and permission results."
+          },
+          {
+            "zh": "优化任务与能力轨迹投影，稳定展示工具、审批、提问、Subagent、恢复和终态，并提升长历史性能与安全脱敏。",
+            "en": "Improves task and capability projection for tools, approvals, questions, subagents, recovery, and terminal states, with faster long-history handling and safer redaction."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复 App 长时间运行后无法主动发现随后发布更新的问题。",
+            "en": "Fixes the App failing to discover updates published after it has been running for an extended time."
+          },
+          {
+            "zh": "修复当前会话权限与未来会话默认权限混用，以及陈旧权限结果覆盖当前选择的问题。",
+            "en": "Fixes current-session permissions being confused with future defaults and stale permission results overriding the current choice."
+          },
+          {
+            "zh": "修复跨会话提交错投和迟到 AppKit/IME 回调恢复旧输入的问题。",
+            "en": "Fixes cross-session submission misrouting and late AppKit or IME callbacks restoring stale composer input."
+          },
+          {
+            "zh": "修复重建父会话历史时误删独立 Subagent 生命周期，以及迟到投影覆盖 durable final 或重复副作用的问题。",
+            "en": "Fixes parent-history rebuilds dropping independent subagent lifecycles and late projections overriding durable finals or repeating side effects."
+          },
+          {
+            "zh": "修复带语义元数据的 PDF 在 DEV 精确文件验收中被错误降级为文本的问题。",
+            "en": "Fixes PDFs with semantic metadata being incorrectly downgraded to text during exact-file DEV acceptance."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/tag/v0.3.5",
+      "assets": [
+        {
+          "name": "Rabbisir-0.3.5-13.zip",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.5/Rabbisir-0.3.5-13.zip",
+          "size": 135073119,
+          "sha256": "a7b7402ca22c1e304da77b54522dbe735c69efd74ede82c856ba739395a416e7"
+        },
+        {
+          "name": "Rabbisir-0.3.5-13.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.5/Rabbisir-0.3.5-13.dmg",
+          "size": 97920345,
+          "sha256": "1afa830347122d536d75b7bf96d02c2beea53ca5b4a6da5e5124af2d1eadcaf0"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.3.5/Rabbisir.dmg",
+          "size": 97920345,
+          "sha256": "1afa830347122d536d75b7bf96d02c2beea53ca5b4a6da5e5124af2d1eadcaf0"
+        }
+      ]
+    },
     {
       "version": "0.3.4",
       "build": "12",
